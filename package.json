@@ -1,0 +1,35 @@
+{
+	"name": "@empyria/name",
+	"version": "0.1.0",
+	"description": "Name and title manipulation library for Empyria",
+	"license": "MIT",
+	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/empyria-nano/name.git"
+	},
+	"type": "module",
+	"main": "./index.js",
+	"scripts": {
+		"format": "bun oxfmt --check",
+		"format:fix": "bun oxfmt",
+		"lint": "bun oxlint",
+		"lint:fix": "bun oxlint --fix",
+		"test": "bun test --coverage",
+		"test:watch": "bun test --watch"
+	},
+	"dependencies": {
+		"@empyria/classification": "0.1.5",
+		"@empyria/common": "0.1.8",
+		"transliteration": "^2.6.1"
+	},
+	"devDependencies": {
+		"oxfmt": "0.66.0",
+		"oxlint": "1.81.0"
+	},
+	"engines": {
+		"bun": ">=1.4.0",
+		"node": ">=26"
+	},
+	"packageManager": "bun@1.4.2"
+}
