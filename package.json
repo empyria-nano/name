@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/name",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Name and title manipulation library for Empyria",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"@empyria/classification": "0.1.6",
-		"@empyria/common": "0.1.9",
+		"@empyria/common": "0.3.0",
 		"transliteration": "^2.6.1"
 	},
 	"devDependencies": {
