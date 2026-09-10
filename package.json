@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/name",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Name and title manipulation library for Empyria",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
