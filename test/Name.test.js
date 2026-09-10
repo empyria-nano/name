@@ -3,6 +3,10 @@ import {
 	TITLE_LIST,
 	TITLES,
 	findTitle,
+	fold,
+	idKey,
+	nameFp,
+	nameText,
 	TRANS,
 	capitalise,
 	shortify,
@@ -71,5 +75,24 @@ describe('re-exported string helpers (from @empyria/classification)', () => {
 
 	test('slugify is re-exported from the transliteration package', () => {
 		expect(slugify('Jean Pierre')).toBe('jean-pierre')
+	})
+})
+
+describe('fold / idKey / nameText / nameFp', () => {
+	test('idKey is format-agnostic', () => {
+		expect(idKey('5299 00 T8BM49')).toBe(idKey('529900t8bm49'))
+		expect(idKey('DE 123.456.789')).toBe('DE123456789')
+	})
+
+	test('nameText transliterates + lower-cases, keeps token spacing', () => {
+		expect(nameText('  José   MÜLLER ')).toBe('jose muller')
+	})
+
+	test('nameFp is order / case / punctuation / honorific / script invariant', () => {
+		expect(nameFp('Steve Charles')).toBe(nameFp('Charles Steve'))
+		expect(nameFp('Dr. Steve Charles')).toBe(nameFp('charles, steve'))
+		expect(nameFp('Professor Ada Lovelace')).toBe(nameFp('lovelace, ada'))
+		expect(nameFp('Владимир Путин')).toBe(nameFp('Putin Vladimir'))
+		expect(nameFp('Mr.')).toBe('')
 	})
 })
