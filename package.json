@@ -1,6 +1,6 @@
 {
 	"name": "@empyria/name",
-	"version": "0.1.18",
+	"version": "0.1.19",
 	"description": "Name and title manipulation library for Empyria",
 	"license": "MIT",
 	"author": "Imre Fazekas <imre.fazekas@icloud.com>",
@@ -19,17 +19,17 @@
 		"test:watch": "bun test --watch"
 	},
 	"dependencies": {
-		"@empyria/classification": "0.1.11",
-		"@empyria/common": "0.3.14",
-		"transliteration": "^2.6.1"
+		"@empyria/classification": "0.1.12",
+		"@empyria/common": "0.3.15",
+		"transliteration": "^2.6.2"
 	},
 	"devDependencies": {
-		"oxfmt": "0.73.0",
-		"oxlint": "1.88.0"
+		"oxfmt": "0.74.0",
+		"oxlint": "1.89.0"
 	},
 	"engines": {
 		"bun": ">=1.4.2",
 		"node": ">=26"
 	},
-	"packageManager": "bun@1.4.3"
+	"packageManager": "bun@1.4.4"
 }
